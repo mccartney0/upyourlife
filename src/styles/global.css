@@ -1,204 +1,49 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
-    vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+:root {
+    --background: #F2F3F5;
+    --blue: #5965E0;
+    --blue-dark: #4953B8;
+    --blue-twitter: #2AA9E0;
+    --gray-line: #DCDDE0;
+    --green: #4CD62B;
+    --red: #E83F5B;
+    --text:#666666;
+    --text-highligh: #B3B9FF;
+    --title: #2E384D;
+    --white: #FFF;
 }
 
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-@media(max-width: 1080px){
-    html{
+@media(max-width: 1080px) {
+    html {
         font-size: 93.75%;
     }
 }
 
-@media(max-width: 720){
-    html{
+@media(max-width: 720px) {
+    html {
         font-size: 87.5%;
     }
 }
 
 body {
-    background-color: var(--background);
+    background: var(--background);
     color: var(--text);
 }
 
-body,
-input,
-textarea,
-button {
-    font: 400 16rem "Inter", sans-serif;
+body, input, textarea, button {
+    font: 400 1rem 'Inter', sans-serif;
 }
-/* 1rem é o  */
+
 button {
     cursor: pointer;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    /* font-weight: 400; */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-::placeholder {
-    color: rgb(0, 0, 0);
-    opacity: 0.4;
-    padding-left: 5px;
 }
 
 a {
     color: inherit;
     text-decoration: none;
 }
-
-:root {
-    --white: #ffffff;
-    --background: #F2F3F5;
-    --gray-line: #DCDDE0;
-    --text: #666;
-    --text-highlight: #B3B9FF;
-    --title: #2E384D;
-    --red: #E83F5B;
-    --green: #4CD62B;
-    --blue: #5965E0;
-    --blue-dark: #4953B8;
-    --blue-twitter: #2AA9E0;
-}
-
-.container{
-    height: 100vh;
-    max-width: 992px;
-    margin: 0 auto;
-    padding: 2.5rem 2rem;
-
-    display: flex;
-    flex-direction: column;
-}
-
