@@ -5,7 +5,7 @@ export function Profile() {
         <div className={styles.profileContainer}>
             <img src="https://github.com/mccartney0.png" alt="Allan Gomes" />
             <div>
-                <strong>Felipe Costa</strong>
+                <strong>Allan Santos</strong>
                 <p>
                     <img src="icons/level.svg" alt="Level" />
                     Level 1

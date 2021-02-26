@@ -3,33 +3,29 @@ import { Countdown } from "../components/Countdown";
 import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from "../components/Profile";
 
+import Head from "next/head";
+
 import styles from "../styles/pages/Home.module.css";
+import { ChallengeBox } from "../components/ChallengeBox";
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Inicio | UpYourLife</title>
+      </Head>
       <ExperienceBar />
 
-      {/* dividir em dois */}
       <section>
         <div>
           <Profile />
           <CompleteChallenges />
           <Countdown />
         </div>
-        <div></div>
+        <div>
+          <ChallengeBox />
+        </div>
       </section>
     </div>
-    // <div>
-    //   <Button color="hotpink">
-    //     Button 1
-    // </Button>
-    //   <Button color="pink">
-    //     Button 2
-    // </Button>
-    //   <Button color="violet">
-    //     Button 3
-    // </Button>
-    // </div>
   );
 }
